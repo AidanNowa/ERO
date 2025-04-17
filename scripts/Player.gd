@@ -49,7 +49,8 @@ func _process(delta):
 	elif velocity.y !=0 && velocity.y > 0:
 		$AnimatedSprite2D.animation = "down"
 	else:
-		$AnimatedSprite2D.animation = "idle"
+		#$AnimatedSprite2D.animation = "idle"
+		$AnimatedSprite2D.stop()
 	
 
 func _on_body_entered(body):

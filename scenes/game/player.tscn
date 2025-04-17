@@ -6,13 +6,13 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a851j"]
 size = Vector2(14, 23)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g6ssc"]
-atlas = ExtResource("2_ao1l3")
-region = Rect2(0, 96, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bwij"]
 atlas = ExtResource("2_ao1l3")
 region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6ssc"]
+atlas = ExtResource("2_ao1l3")
+region = Rect2(0, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_osyss"]
 atlas = ExtResource("2_ao1l3")
@@ -22,25 +22,25 @@ region = Rect2(64, 96, 32, 32)
 atlas = ExtResource("2_ao1l3")
 region = Rect2(32, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ykn18"]
-atlas = ExtResource("2_ao1l3")
-region = Rect2(0, 128, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_o1nmt"]
 atlas = ExtResource("2_ao1l3")
 region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykn18"]
+atlas = ExtResource("2_ao1l3")
+region = Rect2(0, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sxmf8"]
 atlas = ExtResource("2_ao1l3")
 region = Rect2(64, 128, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8hm5g"]
-atlas = ExtResource("2_ao1l3")
-region = Rect2(0, 160, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_h0lri"]
 atlas = ExtResource("2_ao1l3")
 region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hm5g"]
+atlas = ExtResource("2_ao1l3")
+region = Rect2(0, 160, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t32h4"]
 atlas = ExtResource("2_ao1l3")
@@ -49,6 +49,9 @@ region = Rect2(64, 160, 32, 32)
 [sub_resource type="SpriteFrames" id="SpriteFrames_gm8ah"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bwij")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_g6ssc")
 }, {
@@ -72,6 +75,9 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_o1nmt")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ykn18")
 }, {
 "duration": 1.0,
@@ -85,6 +91,9 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0lri")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8hm5g")
 }, {
@@ -111,3 +120,4 @@ shape = SubResource("RectangleShape2D_a851j")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_gm8ah")
 animation = &"walk"
+frame_progress = 0.18034
